@@ -11,6 +11,7 @@
     }
 }
 
+/* Desktop Responsive Landscape */
 
 body {
     background-color: #080C1C;
@@ -72,7 +73,8 @@ body {
     gap: 10px;
 }
 
-.instagram, .github {
+.instagram,
+.github {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +96,57 @@ body {
     width: auto;
 }
 
-.instagram:hover ,.github:hover{
+.instagram:hover,
+.github:hover {
     background-color: #303e4a;
     scale: 1.05;
+}
+
+/* Mobile Responsive Potrait*/
+
+@media only screen and (orientation: portrait) and (min-width: 200px) and (max-width: 480px) {
+
+    .circle {
+        height: 50vh;
+        width: 40vh;
+    }
+
+    .turtle {
+        height: 10vh;
+    }
+
+    .content {
+        font-size: 3vw;
+    }
+
+    .instagram,
+    .github {
+        height: 5vh;
+        width: 5vh;
+    }
+
+}
+
+
+/* Tablet Responsive Potrait (Including Larger Tablets)*/
+
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1279px) {
+
+    .circle {
+        height: 50vh;
+        width: 60vh;
+    }
+
+    .turtle {
+        height: 15vh;
+    }
+
+    /* .content {} [NOT REQUIRED FOR NOW] */
+
+    .instagram,
+    .github {
+        height: 5vh;
+        width: 5vh;
+    }
+
 }
