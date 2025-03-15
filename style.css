@@ -1,0 +1,100 @@
+/* Importing Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2%);
+    }
+}
+
+
+body {
+    background-color: #080C1C;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.background {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    background-color: #081C3C;
+    height: 90vh;
+    width: 63%;
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+.container {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.turtle {
+    height: 20vh;
+    width: auto;
+    position: relative;
+    animation: floating 1s ease-in-out forwards infinite alternate;
+}
+
+.content h4 {
+    font-weight: normal;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram, .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    background-color: #43586A;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.instagram img {
+    max-height: 60%;
+    width: auto;
+}
+
+.github img {
+    max-height: 90%;
+    width: auto;
+}
+
+.instagram:hover ,.github:hover{
+    background-color: #303e4a;
+    scale: 1.05;
+}
