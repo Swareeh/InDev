@@ -1,6 +1,15 @@
 /* Importing Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Importing Doto */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* FIXME: Testing the above line of code ^ */
+}
+
 @keyframes floating {
     0% {
         transform: translateY(0);
@@ -32,10 +41,10 @@ body {
 
 .circle {
     background-color: #081C3C;
-    height: 90vh;
-    width: 63%;
+    height: 85vh;
+    width: 70%;
     border-radius: 50%;
-    filter: blur(15px);
+    filter: blur(40px);
 }
 
 .container {
@@ -59,6 +68,11 @@ body {
     width: auto;
     position: relative;
     animation: floating 1s ease-in-out forwards infinite alternate;
+}
+
+.content h3 {
+    font-family: "Doto", serif;
+    font-size: 2.5vw;
 }
 
 .content h4 {
@@ -119,10 +133,26 @@ body {
         font-size: 3vw;
     }
 
+    .content h3 {
+        font-size: 2.5vh;
+    }
+
     .instagram,
     .github {
         height: 5vh;
         width: 5vh;
+    }
+
+    .instagram:hover,
+    .github:hover {
+        background-color: #43586A;
+        scale: 1;
+    }
+
+    .instagram:active,
+    .github:active {
+        background-color: #303e4a;
+        scale: 1.05;
     }
 
 }
@@ -141,12 +171,26 @@ body {
         height: 15vh;
     }
 
-    /* .content {} [NOT REQUIRED FOR NOW] */
+    .content h3 {
+        font-size: 2.5vh;
+    }
 
     .instagram,
     .github {
         height: 5vh;
         width: 5vh;
+    }
+
+    .instagram:hover,
+    .github:hover {
+        background-color: #43586A;
+        scale: 1;
+    }
+
+    .instagram:active,
+    .github:active {
+        background-color: #303e4a;
+        scale: 1.05;
     }
 
 }
