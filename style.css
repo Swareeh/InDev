@@ -88,7 +88,8 @@ body {
 }
 
 .instagram,
-.github {
+.github,
+.linkedin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,8 +111,14 @@ body {
     width: auto;
 }
 
+.linkedin img {
+    max-height: 70%;
+    width: auto;
+}
+
 .instagram:hover,
-.github:hover {
+.github:hover,
+.linkedin:hover {
     background-color: #303e4a;
     scale: 1.05;
 }
