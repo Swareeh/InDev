@@ -145,19 +145,22 @@ body {
     }
 
     .instagram,
-    .github {
+    .github,
+    .linkedin {
         height: 5vh;
         width: 5vh;
     }
 
     .instagram:hover,
-    .github:hover {
+    .github:hover,
+    .linkedin:hover {
         background-color: #43586A;
         scale: 1;
     }
 
     .instagram:active,
-    .github:active {
+    .github:active,
+    .linkedin:active {
         background-color: #303e4a;
         scale: 1.05;
     }
@@ -183,19 +186,22 @@ body {
     }
 
     .instagram,
-    .github {
+    .github,
+    .linkedin {
         height: 5vh;
         width: 5vh;
     }
 
     .instagram:hover,
-    .github:hover {
+    .github:hover,
+    .linkedin:hover {
         background-color: #43586A;
         scale: 1;
     }
 
     .instagram:active,
-    .github:active {
+    .github:active,
+    .linkedin:active {
         background-color: #303e4a;
         scale: 1.05;
     }
